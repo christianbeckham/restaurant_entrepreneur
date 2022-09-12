@@ -9,11 +9,13 @@ class OrderFactory:
 
     @staticmethod
     def create_order(order_type):
-        if order_type == 'Pizza':
+        order_type_lowercase = order_type.lower()
+
+        if order_type_lowercase == 'pizza':
             return Pizza()
-        elif order_type == 'Pasta':
+        elif order_type_lowercase == 'pasta':
             return Pasta()
-        elif order_type == 'Salad':
+        elif order_type_lowercase == 'salad':
             return Salad()
         else:
             print('Invalid order.')
