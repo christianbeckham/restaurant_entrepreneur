@@ -1,3 +1,6 @@
+from logger import logger
+
+
 class Franchise:
     def __init__(self):
         self.location_number = None
