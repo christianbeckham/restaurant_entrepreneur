@@ -8,12 +8,12 @@ class Franchise:
 
     def place_order(self):
         print(
-            f'What would you like to order from store #{self.location_number}?')
+            f'\nWhat would you like to order from store #{self.location_number}?')
         print(f'\t1 - Pizza\n\t2 - Pasta\n\t3 - Salad')
         user_order = (False, None)
 
         while user_order[0] is False:
-            prompt_input_number = int(input('\nEnter order number: '))
+            prompt_input_number = int(input('Enter order number: '))
             user_order = self.__validate_order_input_number(
                 prompt_input_number)
 
