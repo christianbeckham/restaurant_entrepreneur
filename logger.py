@@ -1,7 +1,8 @@
 class Logger:
-    '''Provide functionality to log transactions.
+    '''A class used to provide functionality to log transactions.
 
-    This class is instantiated in this file and implemented using the Singleton design pattern.
+    Import the logger variable defined from this file instead of importing and instantiating a new class.
+    This class implements the Singleton Design Pattern.
 
     Attributes:
         transaction_count: An integer to keep track of the total number of transactions.
